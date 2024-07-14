@@ -1,9 +1,7 @@
 import type { APIRoute } from 'astro';
 
-const usernames = ["Sarah", "Chris", "Yan", "Elian"]
 
-export const GET: APIRoute = ({ params, request }) => {
-  const id = params.id;
+export const GET: APIRoute = () => {
   return new Response(
     JSON.stringify({
       name: 'Astro',
